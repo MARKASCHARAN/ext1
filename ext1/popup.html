@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Extension Popup</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+      .content { display: none; }
+      .active { display: block; }
+     
+    </style>
+  </head>
+  <body>
+    <img src="images/pixelcut-export-rpLZ5pfke-transformed.png" alt="logo" class="logo">
+    <h1 class="head1">Hello, Find Your Shortcuts for Keyboard & Commands</h1>
+    <h1 class="head2">Select Your Operating System</h1>
+
+   
+    
+    <div class="container">
+      <div class="button-group">
+        <button id="mac-button">
+          <i class="fas fa-apple-alt"></i> Mac OS
+        </button>
+        <button id="windows-button">
+          <i class="fab fa-windows"></i> Windows
+        </button>
+        <button id="linux-button">
+          <i class="fab fa-linux"></i> Linux
+        </button>
+      </div>
+    </div>
+    
+  
+      <!-- Content sections for each OS -->
+      <div id="mac-content" class="content">
+        <h2 class="head3"><u>MacOS Keyboard Shortcuts and Terminal Commands</u></h2>
+        <ul>
+          <li>Cmd + A: Select All</li>
+          <li>Cmd + C: Copy</li>
+          <li>Cmd + X: Cut</li>
+          <li>Cmd + V: Paste</li>
+          <li>Cmd + Z: Undo</li>
+          <li>Cmd + Shift + Z: Redo</li>
+          <li>Cmd + S: Save</li>
+          <li>Cmd + P: Print</li>
+          <li>Cmd + F: Find</li>
+          <li>Cmd + H: Hide the active window</li>
+          <li>Cmd + M: Minimize the active window</li>
+          <li>Cmd + N: New window or document</li>
+          <li>Cmd + O: Open a file</li>
+          <li>Cmd + Q: Quit the active application</li>
+          <li>Cmd + W: Close the active window</li>
+          <li>Cmd + Tab: Switch between open applications</li>
+          <li>Cmd + Space: Open Spotlight search</li>
+          <li>Cmd + Shift + 4: Capture a selected portion of the screen</li>
+          <li>Cmd + Shift + 3: Capture the entire screen</li>
+          <li>Cmd + Option + Esc: Force quit an application</li>
+          <li>Cmd + Shift + N: Create a new folder in Finder</li>
+          <li>Cmd + Option + L: Open the Downloads folder</li>
+          <li>Cmd + Option + D: Show or hide the Dock</li>
+          <li>Cmd + Control + Q: Lock the screen</li>
+          <li>Cmd + Control + Power: Restart your Mac</li>
+          <li>Cmd + Option + Power: Put your Mac to sleep</li>
+        </ul>
+      </div>
+  
+      <div id="windows-content" class="content">
+        <h2 class="head3"><u>Windows Keyboard Shortcuts and Terminal Commands</u></h2>
+        <ul>
+          <li>Ctrl + C: Copy</li>
+          <li>Ctrl + X: Cut</li>
+          <li>Ctrl + V: Paste</li>
+          <li>Ctrl + Z: Undo</li>
+          <li>Ctrl + Y: Redo</li>
+          <li>Ctrl + A: Select All</li>
+          <li>Ctrl + S: Save</li>
+          <li>Ctrl + P: Print</li>
+          <li>Alt + Tab: Switch between open apps</li>
+          <li>Alt + F4: Close the active window</li>
+          <li>Win + D: Show or hide the desktop</li>
+          <li>Win + E: Open File Explorer</li>
+          <li>Win + L: Lock your PC</li>
+          <li>Win + R: Open the Run dialog box</li>
+          <li>Win + I: Open Settings</li>
+          <li>Win + M: Minimize all windows</li>
+          <li>Win + Shift + M: Restore minimized windows</li>
+          <li>Win + U: Open Ease of Access settings</li>
+          <li>Win + S: Open Search</li>
+          <li>Win + P: Project a screen</li>
+          <li>Win + X: Open the Quick Link menu</li>
+          <li>Win + Number (1-9): Open the app pinned to the taskbar in the position indicated by the number</li>
+          <li>F2: Rename selected item</li>
+          <li>F5: Refresh the active window</li>
+          <li>Ctrl + Shift + Esc: Open Task Manager</li>
+          <li>Win + Shift + S: Open Snip & Sketch tool</li>
+        </ul>
+      </div>
+  
+      <div id="linux-content" class="content">
+        <h2 class="head3"><u>Linux Keyboard Shortcuts and Terminal Commands</u></h2>
+        <ul>
+          <li>pwd: Print working directory</li>
+          <li>ls: List directory contents</li>
+          <li>cd [directory]: Change directory</li>
+          <li>mkdir [directory]: Make a new directory</li>
+          <li>rmdir [directory]: Remove an empty directory</li>
+          <li>rm [file]: Remove a file</li>
+          <li>rm -r [directory]: Remove a directory and its contents</li>
+          <li>cp [source] [destination]: Copy files or directories</li>
+          <li>mv [source] [destination]: Move or rename files or directories</li>
+          <li>cat [file]: Concatenate and display file contents</li>
+          <li>more [file]: View file contents one page at a time</li>
+          <li>less [file]: View file contents with navigation</li>
+          <li>head [file]: Display the beginning of a file</li>
+          <li>tail [file]: Display the end of a file</li>
+          <li>touch [file]: Create an empty file or update file timestamp</li>
+          <li>find [directory] -name [filename]: Search for files and directories</li>
+          <li>grep [pattern] [file]: Search for a pattern in a file</li>
+          <li>chmod [permissions] [file]: Change file permissions</li>
+          <li>chown [owner]:[group] [file]: Change file ownership</li>
+          <li>ps: Display currently running processes</li>
+          <li>top: Display real-time system processes</li>
+          <li>kill [PID]: Terminate a process by PID</li>
+          <li>killall [process-name]: Terminate all processes with a given name</li>
+          <li>sudo [command]: Execute a command as superuser</li>
+          <li>apt-get update: Update package lists (Debian-based)</li>
+          <li>apt-get install [package]: Install a package (Debian-based)</li>
+          <li>yum install [package]: Install a package (RedHat-based)</li>
+          <li>man [command]: Display the manual for a command</li>
+          <li>history: Show command history</li>
+          <li>clear: Clear the terminal screen</li>
+          <li>exit: Exit the terminal session</li>
+        </ul>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

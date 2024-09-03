@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    width: 600px;
+    height: 400px;
+    background-color: #ffffff;
+
+  }
+  
+  .logo{
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    position: relative;
+    margin-left: 269px;
+    border-radius: 10px;
+  }
+  button {
+    margin-left: 45%;
+    background-color: #14c646;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+.head1{
+  text-align: center;
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  background-color: #ffffff;
+}
+.head2{
+  text-align: center;
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.head3{
+  text-align: center;
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: auto;
+}
+
+.container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  
+  width: 300px;
+  margin-left: 55px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  background-color: #3FFF00;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Rajdhani", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.content{
+  font-family: "Rajdhani", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: bold;
+ font-size:large;
+}
+
+button:hover {
+  background-color: #1d1160;
+}
+
+
+button {
+  --bg: #1d1160;
+  --text-color: #fff;
+  position: relative;
+  width: 150px;
+  border: none;
+  background: var(--bg);
+  color: var(--text-color);
+  padding: 1em;
+  font-weight: bold;
+  transition: 0.2s;
+  border-radius: 5px;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  box-shadow:#1d1160 0px 7px 2px, #000;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+button:active {
+  top: 4px;
+  box-shadow:#1d1160 0px 3px 2px,#000 0px 1px 2px;
+}
